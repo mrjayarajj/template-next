@@ -1,11 +1,9 @@
 version: '3.4'
 
 services:
-  hellonext:
-    image: templatenext
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+  templatenext:
+    container_name: templatenext-docker-container
+    image: templatenext-docker:latest
     environment:
       NODE_ENV: production
     ports:
